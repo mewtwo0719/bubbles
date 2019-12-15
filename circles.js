@@ -48,7 +48,8 @@ var mouse = {
 };
 
 var arrC = [];
-
+var css = 500;
+if(canvas.width < 500) css = 100;
 for (var i = 0; i <= 500; i++){
     var r = 50;
     var x = Math.random() * (canvas.width - r*4) + r*2;
